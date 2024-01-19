@@ -1,0 +1,62 @@
+:root {
+    --main-color: #272b30;
+    --seconde-color: #32383e;
+    --color-text: #fff;
+    --btn-main-color: #272729;
+}
+body {
+    background-color: var(--main-color);
+}
+header img {
+    height: 30vh;
+    object-fit: cover;
+}
+nav {
+    background-color: rgb(58, 73, 123);
+    position: relative;
+    transform: translateY(-50%);
+}
+.navInfo img {
+    width: 20%;
+}
+
+.navInfo span {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    font-family: 'Nerko One', cursive;
+}
+
+.navList ul li a {
+    color: var(--color-text);
+    padding: 0px 0.5rem;
+    font-family: 'Nerko One', cursive;
+    transition: all 0.5s;
+}
+
+.navList ul {
+    padding: 0px;
+    margin: 0px;
+}
+.navList ul li a:hover {
+    cursor: pointer;
+    color: #0099CC;
+}
+
+.card {
+    min-height: 380px;
+    background-color: var(--main-color);
+    color: var(--color-text);
+    filter: grayscale(0.7);
+    transition: all 0.5s;
+}
+.card:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+#gameDesc {
+    height: 20px;
+}
+
+.gameTitle .titleBtn {
+    background-color: #0D6EFD;
+}
