@@ -93,8 +93,11 @@ function renderModal(){
 }
 
 
-navBtns.addEventListener("click", function (e) {
+navBtns.addEventListener("click", function(e) {
     e.preventDefault()
     genre = e.target.getAttribute("id")
     renderGames()
 })
+
+
+
