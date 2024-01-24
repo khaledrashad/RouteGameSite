@@ -15,29 +15,35 @@
     <div class="gameDesc" id="gameModal">
         <div class="container">
             <div class="gameDescHeader d-flex justify-content-between py-3">
-                <h2 id="gameDescName" class="text-white">title</h2>
+                <h2 id="gameDescName" class="text-white">Details Game</h2>
                 <div id="modalBtn" onclick="closeModal()"><i class="fa-solid fa-xmark fs-2 text-white"></i></div>
             </div>
             <div class="gameDescBody py-5">
                 <div class="row">
                     <div class="col-lg-4 py-2">
-                        <img src="images/1.jpg" alt="" class="w-100">
+                        <img src="images/1.jpg" alt="" class="w-100" id="modalImg">
                     </div>
                     <div class="col-lg-8 text-white gameBodyInfo">
-                        <h2 class="py-2">Title: gameName</h3>
-                        <h5 class="py-2">Category:</h5>
-                        <h5 class="py-2">Platform:</h5>
-                        <h5 class="py-2">Status:</h5>
-                        <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, hic ullam. Veniam delectus,
-                            quasi esse rem eum voluptate iure repudiandae quia vero sed animi nulla repellat obcaecati
-                            ipsum iusto dicta dolores expedita distinctio, ducimus aliquam! Labore quo facere eum at
-                            ipsam dolorum vero sed quam aspernatur vitae, doloremque aperiam amet corporis, doloribus
-                            fugiat non magni ex necessitatibus temporibus rerum, corrupti quos id. Beatae, nulla non.
-                            Veniam odit repudiandae quae, minima, aut ut esse aliquam, alias odio corporis iusto. Rem,
-                            error sapiente consequatur ab facilis sunt magnam itaque rerum aliquid. Voluptatibus sunt
-                            architecto modi reiciendis commodi quidem labore necessitatibus ut expedita!
-                        </p>
-                        <button class="btn btn-outline-warning">Go to game site</button>
+                        <h2 class="py-2">Title: <span id="gameTitle"></span></h3>
+                            <h5 class="py-2">Category: <span id="gameCat"></span></h5>
+                            <h5 class="py-2">Platform: <span id="gamePlat"></span></h5>
+                            <h5 class="py-2">Status: <span id="gameStat"></span></h5>
+                            <p class="py-2" id="gameParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Dolore, hic ullam. Veniam delectus,
+                                quasi esse rem eum voluptate iure repudiandae quia vero sed animi nulla repellat
+                                obcaecati
+                                ipsum iusto dicta dolores expedita distinctio, ducimus aliquam! Labore quo facere eum at
+                                ipsam dolorum vero sed quam aspernatur vitae, doloremque aperiam amet corporis,
+                                doloribus
+                                fugiat non magni ex necessitatibus temporibus rerum, corrupti quos id. Beatae, nulla
+                                non.
+                                Veniam odit repudiandae quae, minima, aut ut esse aliquam, alias odio corporis iusto.
+                                Rem,
+                                error sapiente consequatur ab facilis sunt magnam itaque rerum aliquid. Voluptatibus
+                                sunt
+                                architecto modi reiciendis commodi quidem labore necessitatibus ut expedita!
+                            </p>
+                            <a href="" id="gameBtn" target="_blank"><button class="btn btn-outline-warning">Go to game site</button></a>
                     </div>
                 </div>
             </div>
@@ -56,13 +62,18 @@
                     </div>
                     <div class="navList align-self-center">
                         <ul class="d-flex" id="navBtns">
-                            <li class="list-unstyled"><a href="" id="mmorpg" class="text-decoration-none active">MMORPG</a>
+                            <li class="list-unstyled"><a href="" id="mmorpg"
+                                    class="text-decoration-none active">MMORPG</a>
                             </li>
-                            <li class="list-unstyled"><a href="" id="shooter" class="text-decoration-none">SHOOTER</a></li>
-                            <li class="list-unstyled"><a href="" id="sailing" class="text-decoration-none">SAILING</a></li>
-                            <li class="list-unstyled"><a href="" id="permadeath" class="text-decoration-none">PERMADEATH</a>
+                            <li class="list-unstyled"><a href="" id="shooter" class="text-decoration-none">SHOOTER</a>
                             </li>
-                            <li class="list-unstyled"><a href="" id="superhero" class="text-decoration-none">SUPERHERO</a>
+                            <li class="list-unstyled"><a href="" id="sailing" class="text-decoration-none">SAILING</a>
+                            </li>
+                            <li class="list-unstyled"><a href="" id="permadeath"
+                                    class="text-decoration-none">PERMADEATH</a>
+                            </li>
+                            <li class="list-unstyled"><a href="" id="superhero"
+                                    class="text-decoration-none">SUPERHERO</a>
                             </li>
                             <li class="list-unstyled"><a href="" id="pixel" class="text-decoration-none">PIXEL</a></li>
                         </ul>

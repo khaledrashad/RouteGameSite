@@ -48,7 +48,7 @@ nav {
 }
 
 .card {
-    min-height: 380px;
+    min-height: 450px;
     background-color: var(--main-color);
     color: var(--color-text);
     filter: grayscale(0.7);
@@ -68,7 +68,7 @@ nav {
 
 .gameDesc {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(#000000,#03011ae1);
     position: absolute;
     z-index: 5000;
