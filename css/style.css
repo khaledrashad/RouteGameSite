@@ -6,6 +6,7 @@
 }
 body {
     background-color: var(--main-color);
+    position: relative;
 }
 header img {
     height: 30vh;
@@ -64,3 +65,20 @@ nav {
 .gameTitle .titleBtn {
     background-color: #0D6EFD;
 }
+
+.gameDesc {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#000000,#03011ae1);
+    position: absolute;
+    z-index: 5000;
+    display: none;
+}
+
+.gameBodyInfo {
+    font-family: 'Nerko One', cursive;
+}
+
+#modalBtn:hover {
+    cursor: pointer;
+} 
