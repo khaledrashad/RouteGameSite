@@ -6,6 +6,18 @@ const gameModal = document.getElementById("gameModal")
 let genre = "mmorpg"
 let gameId = ""
 
+function showModal(e){
+    gamesDiv.classList.add("d-none")
+    gameModal.classList.add("d-block")
+    gameId = e.getAttribute("id")
+    renderModal()
+}
+
+function closeModal(){
+    gamesDiv.classList.remove("d-none")
+    gameModal.classList.remove("d-block")
+}
+
 class Game {
     constructor(img, title, desc, genre, platform,id) {
         this.img = img;
@@ -35,17 +47,7 @@ async function gameDescreption() {
     return result
 }
 
-function showModal(e){
-    gamesDiv.classList.add("d-none")
-    gameModal.classList.add("d-block")
-    gameId = e.getAttribute("id")
-    renderModal()
-}
 
-function closeModal(){
-    gamesDiv.classList.remove("d-none")
-    gameModal.classList.remove("d-block")
-}
 
 function renderGames() {
     gameData().then((data) => {
