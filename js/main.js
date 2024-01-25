@@ -51,7 +51,6 @@ async function gameDescreption() {
 
 function renderGames() {
     gameData().then((data) => {
-        console.log(data)
         let gameList = ""
         data.forEach(game => {
             let cardInfo = new Game(game.thumbnail, game.title, game.short_description, game.genre, game.platform, game.id)
@@ -82,7 +81,6 @@ renderGames()
 
 function renderModal(){
     gameDescreption().then((data)=>{
-        console.log(data)
         document.getElementById("gameTitle").innerHTML = `${data.title}`
         document.getElementById("gameCat").innerHTML = `${data.genre}`
         document.getElementById("gamePlat").innerHTML = `${data.platform}`
@@ -97,6 +95,8 @@ function renderModal(){
 
 navBtns.addEventListener("click", function(e) {
     e.preventDefault()
+    e.target.classList.add("active")
+    $(e.target).parent().siblings().children().removeClass("active")
     genre = e.target.getAttribute("id")
     renderGames()
 })
